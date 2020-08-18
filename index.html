@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <title>Introduction to Security</title>
+</head>
+
+<body>
+    <h1>Introduction to Security</h1>
+    <h2>Tufts University Department of Computer Science</h2>
+
+    <h2>Course Description</h2>
+    <p>A holistic and broad perspective on cyber security. Attacking and defending networks, cryptography, vulnerabilities, reverse engineering, web security, static and dynamic analysis, malware, forensics. Principles illustrated through hands-on labs and projects, including Capture The Flag (CTF) games.</p>
+
+    <h2>Sections</h2>
+    <ol>
+        <li>COMP 116 (undergrads and grads): live sessions on Tuesdays and Thursdays, 4:30 - 5:45 PM EST</li>
+        <li>OMSCS 116 (Online Master's in Computer Science): live sessions on Wednesdays, 6:00 - 7:15 PM EST</li>
+    </ol>
+
+    <h2>Instructor</h2>
+    <ul>
+        <li>Ming Chow, <a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a></li>
+    </ul>
+
+    <h2>Prerequisites</h2>
+    <ul>
+        <li>COMP 15 or Data Structures equivalent course. It is recommended, but not required, that you have taken a computer architecture and assembly language course (e.g., COMP 40). <span class="note">Please disregard prerequisites listed in the University's bulletin as they are incorrect!</span></li>
+    </ul>
+
+    <h2>Hardware and Software for This Class (on your personal computer)</h2>
+    <h3>Absolute Requirements</h3>
+    <ul>
+        <li>A modern web browser (e.g., Firefox, Google Chrome, Chromium, Safari, Microsoft Edge)</li>
+        <li>A command line interface to run Unix/Linux commands</li>
+    </ul>
+    <h3>Strongly Recommended Requirements</h3>
+    <ul>
+        <li>A computer with at least 40 GB of hard disk space free and 4 GB of RAM</li>
+        <li><a href="kalivm.html">Kali Linux and a Virtual Machine Hypervisor</a></li>
+    </ul>
+
+    <h2>Assessment</h2>
+    <ul>
+        <li>For COMP 116:
+            <ul>
+                <li>Labs (70%)</li>
+                <li>Quizzes (25%; there will be two)</li>
+                <li>Subjective factors including asking appropriate questions, answering questions well, organizing study groups or security-related virtual events, etc. (5%)</li>
+            </ul>
+        </li>
+        <li>FOR OMSCS 116:
+            <ul>
+                <li>Labs (55%)</li>
+                <li>Quizzes (25%; there will be two)</li>
+                <li>Final project (15%)</li>
+                <li>Subjective factors including asking appropriate questions, answering questions well, organizing study groups or security-related virtual events, etc. (5%)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Course Infrastructure</h2>
+    <ul>
+        <li>Lab submissions: <a href="https://canvas.tufts.edu/" target="_blank">Canvas (Tufts UTLN required)</a></li>
+        <li>Quizzes: <a href="https://canvas.tufts.edu/" target="_blank">Canvas (Tufts UTLN required)</a></li>
+        <li>Announcements: <a href="https://piazza.com/tufts/fall2020/compomscs116/home" target="_blank">Piazza</a></li>
+        <li>Q&A: <a href="https://piazza.com/tufts/fall2020/compomscs116/home" target="_blank">Piazza</a></li>
+        <li>Discussions and collaborations: Discord</li>
+        <li>Synchronous sessions: Zoom (Tuesdays, Wednesdays), Twitch (Thursdays)</li>
+    </ul>
+
+    <h2>Syllabus</h2>
+    <table>
+        <tr>
+            <td>Topic 1, starts Tuesday, September 8th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/01_course_introduction.pdf">Course Introduction</a> - By the end of this week, students will learn many of the fundamental Linux commands, an important skill for any good security practitioner, by playing Capture The Flags via OverTheWire. Students will remember the three principles of the CIA triad, critical to any organization’s security infrastructure.</li>
+                    <li><a href="readings/#module1">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 1: Working with the Command Line</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 2, starts Tuesday, September 15th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/02_networking_packets.pdf">Networking and Packets</a> - By the end of this week, students will be able to dissect packet captures (PCAPs), network traffic.</li>
+                    <li><a href="readings/#module2">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 2: Packet Sleuth</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 3, starts Tuesday, September 22nd</td>
+            <td>
+                <ul>
+                    <li><a href="slides/03_attacking_networks.pdf">Attacking Networks</a> - By the end of this week, students will perform network reconnaissance and port scanning, and build a rudimentary Security Information and Event Management (SIEM) / intrusion detection system (IDS).</li>
+                    <li><a href="readings/#module3">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 3: Scanning and Reconnaissance</li>
+                    <li>Lab 4: Snake Oil, The Incident Alarm</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 4, starts Tuesday, October 6th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/04_cryptography.pdf">Cryptography</a> - By the end of this week, students will be able to crack passwords on a Linux or Windows system, use one-way hash functions, and briefly describe how Transport Layer Security works.</li>
+                    <li><a href="readings/#module4">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 5: Password Cracking Contest opens, due in a month</li>
+                    <li><a href="finalproject.html">Final Project opens</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 5, starts Tuesday, October 13th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/05_vulnerabilities.pdf">Vulnerabilities</a> - By the end of this week, students will know the difference between CVE and CWE.</li>
+                    <li><a href="readings/#module5">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Quiz 1</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 6, starts Tuesday, October 20th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/06_web_security.pdf">Web Security</a> - By the end of this week, students will able to perform and defend against the following attacks: Cross-Site Scripting (XSS), SQL injection, Cross-Site Request Forgery (CSRF), session hijacking, cookie tampering, directory traversal, command injection, remote and local file inclusion. Students will also write a fuzzer to find any software vulnerabilities.</li>
+                    <li><a href="readings/#module6">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 6: The XSS Game</li>
+                    <li>Lab 7: Gain Access to Website</li>
+                    <li>Lab 8: The Fuzzer</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 7, starting Tuesday, October 27th</td>
+            <td>
+                <ul>
+                    <li>The Capture The Flags (CTF) Game Played Online - By the end of this week, students will be able to find and take advantage of a number of vulnerabilities on a live web application(s).</li>
+                    <li><a href="readings/#module7">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 9: The CTF Write Up</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 8, starts Tuesday, November 10th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/08_static_dynamic_analysis.pdf">Static and Dynamic Analysis</a> - By the end of this week, students will be able to perform static analysis and dynamic analysis scans on software, write a technical risk analysis that is communicated to upper management.</li>
+                    <li><a href="readings/#module8">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 10: Technical Risk Analysis</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 9, starts Tuesday, November 17th</td>
+            <td>
+                <ul>
+                    <li><a href="slides/09_malware.pdf">Malware</a> - By the end of this week, students will be able to describe types of malware, see certain malware behaviors, scan and analyze malware, reverse engineer Android apps to determine if they are malicious.</li>
+                    <li><a href="readings/#module9">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Lab 11: Android Malware Analysis</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 10, starts Tuesday, December 1st</td>
+            <td>
+                <ul>
+                    <li><a href="slides/10_forensics_incident_handling.pdf">Forensics and Incident Handling</a> - By the end of this week, students will be able to acquire data from a disk (e.g., USB drive) using <code>dd</code>, analyze image of disk from `dd` using forensics tools, and recover deleted files off a disk.</li>
+                    <li><a href="readings/#module10">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Quiz 2</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Topic 11, starts Tuesday, December 8th</td>
+            <td>
+                <ul>
+                    <li>The Future: Nihilism or Hope? - By the end of this week, students shall debate and ponder the hard questions in security, and be able to argue multiple viewpoints.</li>
+                    <li><a href="readings/#module11">Readings and Videos</a></li>
+                </ul>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <h3>Administrative</h3>
+    <p>No class on the following dates:</p>
+    <ul>
+        <li>Tuesday, November 3rd (Election Day)</li>
+        <li>Tuesday, November 10th (Wednesday Schedule)</li>
+        <li>Wednesday, November 11th (Veterans Day)</li>
+        <li>Tuesday, November 24th (Thanksgiving week)</li>
+        <li>Wednesday, November 25th (Thanksgiving week)</li>
+    </ul>
+
+    <h3>Thursdays on Twitch Schedule (<a href="https://www.twitch.tv/mchow01" target="_blank">https://www.twitch.tv/mchow01</a>)</h3>
+    <ol>
+        <li>Thursday, September 10th: Using Kali Linux VM</li>
+        <li>Thursday, September 17th: Packet Analysis Using Wireshark</li>
+        <li>Thursday, September 24th: Basic Reconnaisance using Nmap</li>
+        <li>Thursday, October 1st: Scapy</li>
+        <li>Thursday, October 8th: Password Cracking with John the Ripper</li>
+        <li>Thursday, October 15th: Using Metasploit</li>
+        <li>Thursday, October 22nd: Damn Vulnerable Web Application, Cross Site Scripting, and SQL Injection</li>
+        <li>Thursday, October 29th: TBD</li>
+        <li>Thursday, Guy Fawkes Night: TBD</li>
+        <li>Thursday, November 12th: Static Analysis Using Veracode</li>
+        <li>Thursday, November 19th: Malware and Using VirusTotal</li>
+        <li>Thursday, December 3rd: Basic Forensics</li>
+        <li>Thursday, December 12th: The Hard Problems in Security</li>
+    </ol>
+
+    <h3>Topics That Will Not Be Covered In This Course</h3>
+    <ul>
+        <li>Social Engineering</li>
+        <li>x86, x64, ARM Reverse Engineering</li>
+        <li>Privacy</li>
+    </ul>
+
+    <h2>Frequently Asked Questions</h2>
+    <h3>Q: Is there a textbook for this course?</h3>
+    <p>A: No</p>
+    <h3>Q: Are there teaching assistants (TAs) for this course?</h3>
+    <p>A: No</p>
+    <h3>Q: What are the differences between COMP 116 and OMSCS 116 versions of this course?</h3>
+    <p>A: The differences between the two versions are:<p>
+    <ol>
+        <li>The Capture The Flags game is played in teams for COMP 116, while it is played individually in OMSCS 116</li>
+        <li>A final project for OMSCS 116</li>
+        <li>Different Canvas websites for grading purposes</li>
+        <li>Different live meeting times</li>
+    </ol>
+    <p>Everything else is the same: shared content, labs, quizzes, Piazza, and Discord.</p>
+    <h3>Q: What is the workload of this course?</h3>
+    <p>A: Here is a list of all the labs with expected length and difficulty:</p>
+    <ul>
+        <li>Lab 1: Working with the Command Line, Short (1 hour max) to Long (3+ hours) --you can put in as much time as you want on this lab</li>
+        <li>Lab 2: Packet Sleuth, Medium (1 - 3 hours)</li>
+        <li>Lab 3: Scanning and Reconnaissance, Very short (30 minutes). <strong>NOTE: This lab cannot be made publicly available because an actual target is used.</strong></li>
+        <li>Lab 4: Python and the Incident Alarm, Long (over 3 hours) to Impossible</li>
+        <li>Lab 5: The Password Cracking Contest, If you crack all the password hashes (read: good luck with that), you will receive an automatic "A" in the course</li>
+        <li>Lab 6: The XSS Game, Medium</li>
+        <li>Lab 7: Gain Access to Website, Very short. <strong>NOTE: This lab cannot be made publicly available because an actual target is used.</strong></li>
+        <li>Lab 8: The Fuzzer, Short to Medium</li>
+        <li>Lab 9: The CTF Game, One week individually. <strong>NOTE: This lab cannot be made publicly available because an actual target is used.</strong></li>
+        <li>Lab 10: Technical Risk Analysis, Short to Medium.</li>
+        <li>Lab 11: Android Malware Analysis, Short to Medium</li>
+    </ul>
+    <h3>Q: Does this course count towards the M.S. in Cybersecurity and Public Policy?</h3>
+    <p>A: Yes</p>
+    <h3>Q: Does this course count towards the M.S. in Software Systems Development?</h3>
+    <p>A: Yes. In fact, this is one of the four required courses for the M.S.</p>
+    <h3>Q: Why is using a Kali virtual machine not mandatory for this class and thus strongly recommended?</h3>
+    <p>A: The reasons:</p>
+    <ol>
+        <li>Accessibility. For students who are visually impaired, using a virtual machine can be very difficult.
+        </li>
+        <li>Not all students have a capable laptop. Sometimes due to financial reasons, some students use
+            Chromebooks.
+            The tools required for this course can be installed natively on macOS, Windows, and Linux.</li>
+        <li>Performance. Sometimes, using a VM can be very slow. A VM also do not use native drivers (e.g., for
+            networking).</li>
+    </ol>
+    <h3>Q: Is Piazza used in this course?</h3>
+    <p>In summer 2020, I returned to using Piazza again. In spring 2020, I decided not to use Piazza because (1) I felt it was a nuisance for students to use multiple websites and services for one course, and (2) at times, it was underutilized. However, I noticed a drop-off in the discussions, and the Discussions interface on Canvas isn't as nice as Piazza's. Also, students can chime in anonymously on Piazza but not on Canvas. Finally, because most Computer Science courses use Piazza, it has been an expectation for students. Thus, I brought it back.</p>
+    <h3>Q: Why is there a course website and a course Canvas? If you say "it is a nuisance for students to use multiple websites and services for one course", what gives?</h3>
+    <p>This course website serves a few critical purposes. Years ago, I made a decision to make all the readings, slide decks, and most of the labs publicly available. The reasons: (1) to show that Tufts is serious and is working on Cyber Security matters, (2) to provide learning material to the public on Cyber Security as the Cyber Security education problem is very dire, (3) for recordkeeping on what is taught and not taught in this Security class --this comes up often when we speak to industry and organizations who want to work with Tufts on Cyber Security-related matters. The Canvas site for this course isn't made publicly available. Even if Canvas site was made publicly available, content is behind a walled garden, and (4) for redundancy if Canvas goes down.</p>
+    <h3>Q: I have not taken a course on Networks (COMP 112), Operating Systems (COMP 111), or Computer Architecture (COMP 40) yet. Is that a problem?</h3>
+    <p>No. Cyber Security is a very broad field and it is impossible for anyone, even professionals, to know everything. What is important for you is to start thinking about Security.</p>
+    <h3>Q: If I am taking this course for professional purpose, can I have a tuition reimbursement letter or certificate?</h3>
+    <p>A: <a href="https://twitter.com/0xmchow/status/1085649884663828481" target="_blank">Absolutely! It's a nice tuition reimbursement letter, hand signed!</a></p>
+    <h3>Q: Is there an archive of a previous course website available?</h3>
+    <p>A: Sure, <a href="index-summer2020.html">here is the public course website for summer 2020 semester</a>.</p>
+    <h3>Q: Will this course use ProctorU?</h3>
+    <p>A: <a href="https://www.bleepingcomputer.com/news/security/proctoru-confirms-data-breach-after-database-leaked-online/" target="_blank">Absolutely not!</a></p>
+
+    <h2 id="policy">Course Policies</h2>
+    <h3>Labs</h3>
+    <ul>
+        <li>All labs for a given topic are due on a Sunday at 11:59 PDT.</li>
+        <li>With the exception of password cracking lab and CTF game, you are granted an automatic extension of 24 hours at no cost (i.e., grace period). A lab submitted after the grace period will not be accepted.</li>
+        <li>No extension tokens.</li>
+    </ul>
+</body>
+
+</html>
