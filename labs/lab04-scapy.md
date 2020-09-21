@@ -16,7 +16,7 @@ Because Python 2 was deprecated on January 1, 2020, you must use Python 3 for th
 An interactive Python tutorial: https://www.learnpython.org/
 
 ## The Incident Alarm
-"Scapy is a Python module created by Philippe Biondi that allows extensive packet manipulation. Scapy allows packet forgery, sniffing, PCAP reading/writing, and real-time interaction with network targets. Scapy can be used interactively from a Python prompt or built into scripts and programs" (from the SANS Institute's Scapy Cheat Sheet https://blogs.sans.org/pen-testing/files/2016/04/ScapyCheatSheet_v0.2.pdf).
+"Scapy is a Python module created by Philippe Biondi that allows extensive packet manipulation. Scapy allows packet forgery, sniffing, PCAP reading/writing, and real-time interaction with network targets. Scapy can be used interactively from a Python prompt or built into scripts and programs" (from the SANS Institute's Scapy Cheat Sheet https://wiki.sans.blue/Tools/pdfs/ScapyCheatSheet_v0.2.pdf).
 
 Scapy and Python 3 are installed on Kali Linux.
 
@@ -82,7 +82,7 @@ Here are PCAPs you can also use to test your alarm:
 
 ### Part 2: References
 * Scapy documentation: https://scapy.readthedocs.io/en/latest/
-* Scapy Cheat Sheet (SANS Institute): https://blogs.sans.org/pen-testing/files/2016/04/ScapyCheatSheet_v0.2.pdf
+* Scapy Cheat Sheet (SANS Institute): https://wiki.sans.blue/Tools/pdfs/ScapyCheatSheet_v0.2.pdf
 
 ### The `README` File
 This `README` file shall describe the work. This description must:
