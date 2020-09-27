@@ -47,3 +47,7 @@ tr th, td {
 .strike {
    text-decoration: line-through;
 }
+
+iframe {
+	border: none; 
+}
