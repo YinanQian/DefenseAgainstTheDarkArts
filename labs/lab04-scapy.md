@@ -43,13 +43,13 @@ Your program does not need to support saving the stream of packets to a PCAP fil
 No credit if you program crashes or if exceptions are not handled properly.
 
 ## Part 2: Running and Using the Tool
-In Kali Linux and assuming you are root, run: `python3 alarm.py`. By default with no arguments, the tool shall sniff on network interface eth0. The tool must handle three command line arguments:
+In Kali Linux and assuming you are root, run: `sudo python3 alarm.py`. By default with no arguments, the tool shall sniff on network interface eth0. The tool must handle three command line arguments:
 
 `-i INTERFACE: Sniff on a specified network interface`
 `-r PCAPFILE: Read in a PCAP file`
 `-h: Display message on how to use tool`
 
-Example 1: python alarm.py -h shall display something of the like:
+Example 1: sudo python3 alarm.py -h shall display something of the like:
 
 `usage: alarm.py [-h] [-i INTERFACE] [-r PCAPFILE]
 
@@ -57,9 +57,9 @@ A network sniffer that identifies basic vulnerabilities
 
 optional arguments: -h, --help show this help message and exit -i INTERFACE Network interface to sniff on -r PCAPFILE A PCAP file to read`
 
-Example 2: `python3 alarm.py -r set2.pcap` will read the packets from `set2.pcap`
+Example 2: `sudo python3 alarm.py -r set2.pcap` will read the packets from `set2.pcap`
 
-Example 3: `python3 alarm.py -i en0` will sniff packets on a wireless interface `en0`
+Example 3: `sudo python3 alarm.py -i en0` will sniff packets on a wireless interface `en0`
 
 When sniffing on a live interface, the tool must keep running. To quit it, press Control-C
 
