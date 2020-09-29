@@ -43,7 +43,7 @@ Your program does not need to support saving the stream of packets to a PCAP fil
 No credit if you program crashes or if exceptions are not handled properly.
 
 ## Part 2: Running and Using the Tool
-In Kali Linux and assuming you are root, run: `sudo python3 alarm.py`. By default with no arguments, the tool shall sniff on network interface eth0. The tool must handle three command line arguments:
+In Kali Linux, run: `sudo python3 alarm.py`. By default with no arguments, the tool shall sniff on network interface eth0. The tool must handle three command line arguments:
 
 `-i INTERFACE: Sniff on a specified network interface`
 `-r PCAPFILE: Read in a PCAP file`
